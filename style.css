@@ -83,7 +83,8 @@ nav a img {
 .gallery {
   display: flex;
   justify-content: space-around;
-  width: 100%;
+  margin: auto;
+  width: 90%;
 }
 
 .gallery img {
@@ -91,19 +92,29 @@ nav a img {
   margin: 20px;
 }
 
-/* quote rules */
+.responsive-img {
+  display: none;
+}
+
+/* textbox rules - for #quote and #sign-up */
 
 .textbox {
   color: #aec6cf;
+  width: 100%;
   background-color: #228b22;
 }
 
 .textbox h1 {
+  font-size: 5vw;
   font-weight: bold;
 }
 
+.textbox h2 {
+  font-size: 3vw;
+}
+
 .textbox h3 {
-  font-size: 1rem;
+  font-size: 1vw;
   font-style: italic;
 }
 
@@ -112,4 +123,45 @@ h2,
 h3 {
   position: relative;
   left: 15px;
+}
+
+/* media queries */
+
+@media screen and (max-width: 850px) {
+  nav {
+    justify-content: space-around;
+  }
+
+  .splash-textbox img {
+    width: 75%;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  .gallery img {
+    width: 100%;
+    margin: 0;
+    border: 1px solid purple;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  nav {
+    justify-content: center;
+  }
+
+  .nav-links {
+    width: 60%;
+  }
+
+  .nav-img {
+    display: none;
+  }
+
+  .splash-textbox img {
+        width: 50%;
+        min-width: 220px;
+        min-height: 60px;
 }
