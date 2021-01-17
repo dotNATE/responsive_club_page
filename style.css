@@ -93,17 +93,23 @@ nav a img {
 
 /* quote rules */
 
-#quote {
+.textbox {
   color: #aec6cf;
   background-color: #228b22;
 }
 
-#quote h1 {
+.textbox h1 {
   font-weight: bold;
 }
 
-#quote h3 {
+.textbox h3 {
+  font-size: 1rem;
   font-style: italic;
 }
 
-/* sign up rules */
+.textbox h1,
+h2,
+h3 {
+  position: relative;
+  left: 15px;
+}
