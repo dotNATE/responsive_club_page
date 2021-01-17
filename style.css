@@ -28,6 +28,7 @@ nav {
   height: 50px;
   margin: auto;
   background-color: #228b22;
+  z-index: 15;
 }
 
 nav a img {
@@ -49,6 +50,31 @@ nav a img {
   font-weight: bold;
   color: #aec6cf;
   text-decoration: none;
+}
+
+/* splash rules */
+
+#splash {
+  position: relative;
+  top: 50px;
+  height: 700px;
+  width: 100%;
+  background-image: url(/MC_Club/splash_main.png);
+  background-position: center;
+}
+
+.splash-textbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.splash-textbox img {
+  max-width: 441px;
+  max-height: 121px;
 }
 
 /* gallery rules */
